@@ -1,3 +1,17 @@
+html{
+  
+  
+  background: -webkit-linear-gradient(-123deg, rgb(0, 0, 0), rgb(255, 255, 255),  rgb(7, 0, 0));
+background: linear-gradient(-123deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.281)), rgb(7, 0, 0);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  height: 100%;
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +19,1037 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  scroll-padding: 100px;
+  scroll-behavior: smooth;  
+
+  min-height: 100%;
+  
+
+
 }
+
+main{
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+
+
+
+
+#logo{
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+  transition: transform 0.3s ease-out, color 0.5s ease-out;
+  
+  
+}
+#logo:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+  transform: translateY(30px);
+  transform: scale(1.2);
+}
+
+
+
+
+
+header{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  top: -1.25em;
+  z-index: 100;
+  position: relative;
+  z-index: 10;
+  opacity: 70%;
+  transition: transform 0.3s ease-in-out;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+}
+
+header:hover{
+  opacity: 90%;
+  transition: transform 0.4s ease-in-out;
+  transform: translateY(10px);
+  
+}
+
+
+
+
+
+
+.header{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 11.25em;
+  top: -1.25em;
+}
+
+
+
+
+
+ul{
+  position: relative;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0%;
+  top: 25px;
+  left: -15%;
+  gap: 20px;
+}
+
+
+
+
+.inicio{
+  
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.inicio:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+  
+}
+#personita{
+  display: flex;
+  width: 40px;
+  height: 45px;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+  transition: transform 0.3s ease-in-out;
+}
+#personita:hover{
+  transform: translateY(30px);
+  transform: scale(1.2);
+}
+
+
+
+
+
+#shop{
+  color: white;
+  margin-top: 0%;
+  list-style: none;
+  text-decoration: none;  
+}
+#shop:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+#icon_shop{
+  display: flex;
+  width: 40px;
+  height: 45px;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+  transition: transform 0.3s ease-in-out;
+}
+#icon_shop:hover{
+  transform: translateY(30px);
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+#customiza{
+  color: white;
+  margin-top: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+#customiza:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+#icon_custom{
+  display: flex;
+  width: 40px;
+  height: 45px;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+  transition: transform 0.3s ease-in-out;
+  
+}
+#icon_custom:hover{
+  transform: translateY(30px);
+  transform: scale(1.2);
+}
+
+
+
+
+
+#contacto{
+  color: white;
+  margin-top: 0%;
+  list-style: none;
+  text-decoration: none;
+  
+  
+}
+#contacto:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+#icon_contacto{
+  display: flex;
+  width: 40px;
+  height: 30px;
+  transform: translate3d(0,0,0); /* Importante para la fluidez */
+  transition: transform 0.3s ease-in-out;
+}
+#icon_contacto:hover{
+  transform: translateY(30px);
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+.carrito{
+  color: white;
+  top: 600px;
+  list-style: none;
+  text-decoration: none;
+  transform: translate3d(0,0,0);
+  transition: transform 0.3s ease-in-out;
+ 
+}
+.carrito img{
+  position: absolute;
+  margin: 0 auto;
+
+  width: 55px;
+  height: 45px;
+
+  left: 550px;
+  top: 60px;
+
+}
+.carrito p{
+  position: relative;
+  font-size: 15px;
+  background-color: blue;
+  border-radius: 15px;
+  height: auto;
+  width: 30px;
+  top: 45px;
+  left: 530px;
+}
+.carrito:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(255, 255, 255));
+
+}
+
+
+
+
+
+
+
+
+
+
+p{
+  color: white;
+}
+.titulos{
+  font-size: 50px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+ 
+  
+}
+
+
+
+
+
+#compras{
+  justify-content: right;
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  list-style: none;
+  margin-right: -1750px;
+  
+}
+
+
+
+
+
+
+
+#titulo_inicio{
+  display: flex;
+  font-size: 110px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  top: 220px;
+  left: 490px;
+  width: 1000px;
+  height: 100px;
+  margin-left: 0%;
+  white-space: pre-line;
+  line-height: 1;
+
+
+  text-align: left;
+}
+
+#imagen1{
+  position: relative;
+  width: 1905px;
+  height: 1900px;
+  z-index: 0;
+  top: -500px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+#pantalla{
+  position: absolute;
+  background-color: black;
+  width: 1905px;
+  height: 1900px;
+  top: -900px;
+  z-index: 1;
+  opacity: 70%;
+
+
+}
+
+
+#texto_inicio{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 550px;
+  left: 500px;
+  width: 350px;
+  height: 240px;
+  font-size: 18px;
+  line-height: 1.5;
+
+  text-align: left;
+}
+
+
+#boton_a_tienda{
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%);
+  box-shadow: 6px 6px 20px -1px #c0b5b5,
+      -6px -6px 20px -1px #aca4a3;
+
+      width: 120px;
+      height: 50px;
+      border-color:#f1f1f1;
+      border-width: 0px;
+      color: rgb(2, 0, 0);
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 30px;
+      position: relative;
+      z-index: 5;
+      margin: 0%;
+      top: -1470px;
+      left: -390px;
+      background-size: 200% 100%;
+      background-position: left;
+      transition: background-position 0.5s ease-out, color 0.3s ease-out;
+}
+
+#boton_a_tienda:hover{
+  color: white;
+  z-index: 3;   
+   
+  background-position: right;
+
+}
+
+
+
+
+#grupo1{
+  position: absolute;
+  
+background: -webkit-linear-gradient(-126deg, rgb(255, 255, 255), rgb(7, 0, 0));
+background: linear-gradient(-126deg, rgb(255, 255, 255), rgb(7, 0, 0));
+
+  width: 1905px;
+  height: 767px;
+  z-index: 1;
+  top: 930px;
+  display: flex;
+  margin-bottom: 0%;
+  overflow: hidden;
+}
+
+#imagen2{
+  position: absolute;
+  display: flex;
+  width: 443;
+  height: 665;
+  border-radius: 50px;
+  box-shadow: -20px 15px 20px 20px rgb(39, 39, 39);
+
+  margin-top: 45px;
+  margin-bottom: 20px;
+  margin-right: 0%;
+  left: 400px;
+
+
+}
+
+#texto_grupo_1{
+  position: absolute;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  font-size: 22px;
+  top: 360px;
+  left: 1000px;
+  margin-right: 0%;
+  color: black;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+#subtitulo_1{
+background: linear-gradient(52deg, rgb(0, 38, 255),rgb(255, 0, 0), rgb(30, 255, 0));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+  position: absolute;
+  font-size: 100px;
+  display: flex;
+  margin: 0%;
+  left: 995px;
+  top: 160px;
+  line-height: 1;
+
+  text-align: left;
+}
+
+
+
+#boton_login{
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #000000 50%, #000000 100%);
+  box-shadow: 6px 6px 20px -1px #c0b5b5,
+      -6px -6px 20px -1px #aca4a3;
+
+      width: 200%;
+      height: 50px;
+      border-color:#f1f1f1;
+      border-width: 0px;
+      color: rgb(2, 0, 0);
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 30px;
+      position: relative;
+      z-index: 2;
+      margin: 0%;
+      left: -600%;
+      background-size: 200% 100%;
+      background-position: left;
+      transition: background-position 0.5s ease-out, color 0.3s ease-out;
+}
+
+#boton_login:hover{
+
+
+        color: white;
+        z-index: 3;   
+         
+        background-position: right;
+      
+}
+
+
+
+
+#titulo_registro{
+  position: relative;
+  top: 180px;
+  
+
+}
+#titulo_login{
+  position: relative;
+  top: 180px;
+}
+
+#boton_register{
+  background: linear-gradient(to right, #000000 0%, #000000 50%, #ffffff 50%, #ffffff 100%);
+  box-shadow: 6px 6px 20px -1px #3a3a3a,
+      -6px -6px 20px -1px #000000;
+  width: 200%;
+  height: 50px;
+  border-color:#000000;
+  border-width: 0px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  margin: 0%;
+  left: -580px;
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.5s ease-out, color 0.3s ease-out;
+  
+}
+
+#boton_register:hover{
+  background-position: right;
+  color: rgb(0, 0, 0);
+}
+
+
+
+form {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  top: 200px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #333131;
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px -1px #414141,
+        -6px -6px 20px -1px #525252;
+        z-index: 3;
+       
+
+}
+#form_container{
+  margin-bottom: 270px;
+}
+#form_container_2{
+  margin-bottom: 445px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="name"], input[type="tel"] {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #4645459c;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.404), -5px -5px 15px rgba(124, 123, 123, 0.897);
+  
+}
+
+button[type="submit"] {  
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  background: linear-gradient(145deg, #cccccc, #ffffff);
+  box-shadow: 6px 6px 20px -1px #c0b5b5,
+      -6px -6px 20px -1px #aca4a3;
+  transition: background-color 0.3s ease-in-out;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(145deg, #b66767, #d87a7a);
+    box-shadow: 6px 6px 20px -1px #ac6161,
+        -6px -6px 20px -1px #d45848;
+
+        color: white;
+}
+
+
+
+#oscuro_registros{
+  position: relative;
+  background-color: black;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  top: -500px;
+  opacity: 50%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+#titulo_principal{
+  color: white;
+  font-size: 150px;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 800px;
+  line-clamp: 10px;
+  line-height: 120px;
+  top: 180px;
+  left: 100px;
+  text-align: center;
+  z-index: 0;
+  
+
+}
+
+
+#titulo_carrito{
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  font-size: 80px;
+  margin: 0 auto;
+  top: 10px;
+
+  
+}
+
+
+
+#titulo_contacto{
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  font-size: 80px;
+  margin: 0 auto;
+  top: 10px;
+  left: 1350px;
+}
+
+#titulo_customiza{
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  font-size: 80px;
+  margin: 0 auto;
+  top: 10px;
+  left: 1300px;
+
+}
+
+
+#bunnie_back{
+  position: relative;
+  background-color:rgb(0, 0, 0);
+  z-index: 3;
+  height: 550px;
+  margin: 0 auto;
+  top: -1005px;
+  opacity: 90%;
+
+}
+
+#bunnie_titulo{
+  position: relative;
+  color: white;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  line-height: 150px;
+  align-self: center;
+  font-size: 160px;
+  z-index: 4;
+  top: -600px;
+  margin: 0 auto;
+
+
+}
+footer{
+  position:static;
+  background-color: black;
+  top:  auto;
+  width: 100%;
+
+  
+  
+  
+
+}
+footer p{
+  color: white;
+}
+
+
+
+.contenedor_bunnie{
+  position: relative;
+  top: 250px;
+  margin-top: 0%;
+  width: 100%;
+}
+
+
+.lista_footer{
+  display: flex;
+  position: relative;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 1.2em;
+  letter-spacing:  -0.5px;
+
+  
+}
+
+#insta{
+  position: relative;
+  left: 950px;
+}
+#twitter{
+  position: relative;
+ left: 150px;
+
+}
+#face{
+  position: relative;
+  left: -650px;
+}
+
+
+#grupo2{
+  color: white;
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+
+  background: -webkit-linear-gradient(-126deg, rgb(255, 255, 255), rgb(7, 0, 0));
+  background: linear-gradient(-126deg, rgb(255, 255, 255), rgb(7, 0, 0));
+
+  width: 1905px;
+  height: 90%;
+
+  top: 260%;
+  left: 0%;
+
+  margin: 0 auto;
+}
+
+
+#titulo_carrito{
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  font-size: 80px;
+  margin: 0 auto;
+  top: 10px;
+  left: 1350px;
+}
+
+
+#productos_carrito{
+  position:relative;
+  top: 160px;
+  margin-bottom: 150px;
+
+  display: flex;
+  height: 700px;
+  width: auto;
+  background-color: white;
+
+}
+
+
+
+#titulo_cotizaciones{
+  background: linear-gradient(10deg, rgb(51, 255, 0),rgb(255, 0, 0), rgb(0, 17, 255));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 150px;
+  text-align: center;
+
+  
+
+}
+
+#boton_cotizaciones{
+  background: linear-gradient(145deg, #cccccc, #ffffff);
+    box-shadow: 6px 6px 20px -1px #c0b5b5,
+        -6px -6px 20px -1px #aca4a3;
+
+        width: 300px;
+        height: 100px;
+        border-color:#f1f1f1;
+        border-width: 15px;
+        color: rgb(2, 0, 0);
+        font-weight: bold;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 2;
+        top:550px;
+        left: 820px;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.404),10px 10px 5px rgba(0, 0, 0, 0.404);
+        transform: scale(1);
+}
+#boton_cotizaciones:hover{
+  background: linear-gradient(145deg, #b66767, #d87a7a);
+    box-shadow: 6px 6px 20px -1px #ac6161,
+        -6px -6px 20px -1px #d45848;
+
+        color: white;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        
+      
+}
+
+
+
+
+#texto_cotizacion{
+  position: relative;
+  display: inline-block;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  vertical-align: top;
+  width: 95%;
+  max-width: 95%;
+  min-width: 95%;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #4645459c;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.404), -5px -5px 15px rgba(124, 123, 123, 0.897);
+  
+}
+
+#form_contacto{
+  margin-bottom: 330px;
+}
+
+
+.texto_proximamente{
+  position: relative;
+  justify-content: center;
+
+
+  top: 260px;
+
+  margin-bottom: 540px;
+
+}
+.texto_proximamente h1{
+  color: white;
+  font-size: 150px;
+  text-align: center;
+  background: linear-gradient(52deg, rgb(51, 255, 0),rgb(255, 0, 0), rgb(0, 17, 255));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+button{
+  cursor: pointer;
+}
+
+#icon_carrito{
+  position: relative;
+
+  height: 15px;
+  width: 15px;
+  top: 2000px;
+  left: 100px;
+}
+
+
+
+
+
+
+
+
+.content-input{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 60px; /* Damos un padding de 60px para posicionar 
+        el elemento <i> en este espacio*/
+	display: block;
+}
+ 
+/* Estas reglas se aplicarán a todos las elementos i 
+después de cualquier input*/
+.content-input input + i{
+       background: #f0f0f0;
+       border:2px solid rgba(0,0,0,0.2);
+       position: absolute; 
+       left: 0;
+       top: 0;
+}
+ 
+/* Estas reglas se aplicarán a todos los i despues 
+de un input de tipo checkbox*/
+.content-input input[type=checkbox ] + i{
+	width: 52px;
+	height: 30px;
+	border-radius: 15px;
+}
+
+
+/*
+Creamos el círculo que aparece encima de los checkbox
+con la etqieta before. Importante aunque no haya contenido
+debemos poner definir este valor.
+*/
+.content-input input[type=checkbox] + i:before{
+	content: ''; /* No hay contenido */
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
+
+
+.content-input input[type=checkbox]:checked + i:before{
+	left: 22px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+ 
+.content-input input[type=checkbox]:checked + i{
+ background: #2AC176;
+}
+
+
+.content-input input[type=checkbox] + i:after{
+	content: 'ON';
+	position: absolute;
+	font-size: 10px;
+	color: rgba(255,255,255,0.6);
+	top: 8px;
+	left: 4px;
+	opacity: 0 /* Ocultamos este elemento */;
+	transition: all 0.25s ease 0.25s;
+}
+ 
+/* Cuando esté checkeado cambiamos la opacidad a 1 y lo mostramos */
+.content-input input[type=checkbox]:checked + i:after{
+ opacity: 1;
+}
+
+
+#footer_style{
+  display: flex;
+  position: relative;
+  margin-top: 80px;
+  z-index: 800;
+  width: auto;
+  height: 50px;
+}
+#greeting {
+  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  top: 105%;
+  height: 10%;
+  
+}
+
+
+#saludo{
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  
+
+
+}
+
+
+
+
+
+#imagen_insta{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  
 }

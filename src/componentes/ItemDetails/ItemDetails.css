@@ -1,0 +1,9 @@
+.Card{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+}
+.ItemImg{
+    width: 100%;
+    height: 100%;
+}

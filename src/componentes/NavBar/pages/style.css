@@ -1,0 +1,108 @@
+.swiper-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.2fr);
+    grid-gap: 0px;
+    top: 18%;
+    margin-bottom: 10%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   
+  }
+  
+  /* diapositivas */
+  .swiper-slide img {
+    
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+  
+  }
+  
+  /* paginación */
+  .swiper-pagination {
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #siguiente_flecha{
+    top: 300px;
+
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+
+    background: linear-gradient(0deg,rgb(0, 255, 8), rgb(255, 0, 0),rgb(255, 255, 255), rgb(0, 17, 255), rgb(0, 255, 8));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  }
+  #anterior_flecha{
+    top: 300px;
+    background-color: white;
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    color: black;
+    background: linear-gradient(0deg,rgb(0, 255, 8), rgb(255, 0, 0),rgb(255, 255, 255), rgb(0, 17, 255), rgb(0, 255, 8));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+
+  
+  #nombre_producto{
+    color: white;
+    
+  }
+  
+#titulo_tienda{
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    font-size: 80px;
+    margin: 0 auto;
+    top: 10px;
+    left: 1350px;
+  }
+  
+  
+.boton-agregar{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    background: linear-gradient(132deg,rgb(0, 255, 8), rgb(0, 17, 255));
+
+    box-shadow: 6px 6px 20px -1px #1900ff,
+        -6px -6px 20px -1px #49f200;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .boton-agregar:hover{
+    background: linear-gradient(145deg, #b66767, #d87a7a);
+    box-shadow: 6px 6px 20px -1px #ac6161,
+        -6px -6px 20px -1px #d45848;
+  
+        color: white;
+  }
+  
+
+  #precio_productos{
+
+    font-weight: bold;
+    font-size: 25px;
+
+  }
+  
+
