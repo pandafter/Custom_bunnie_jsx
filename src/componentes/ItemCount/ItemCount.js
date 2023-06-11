@@ -1,8 +1,6 @@
-
 import './ItemCount.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 
 const ItemCount = ({ stock, product, onAdd }) => {
   const [quantity, setQuantity] = useState(1);
@@ -22,8 +20,6 @@ const ItemCount = ({ stock, product, onAdd }) => {
   const addToCart = () => {
     if (onAdd && typeof onAdd === 'function') {
       onAdd(quantity, product);
- 
-      
     }
   };
 
@@ -42,28 +38,20 @@ const ItemCount = ({ stock, product, onAdd }) => {
       </div>
 
       <div>
-        <Link to="/itemDetails" >
-        <button
-          id="boton_agregar"
-          className="Button"
-          onClick={() => {
-            console.log(
-              'se agrego al carrito ' +
-                quantity +
-                ' productos con id: ' +
-                product
-            );
-            addToCart();
-            
-          }}
-        >
-          Agregar al carrito
-        </button>
-        </Link>
+        {product && (
+          <Link to={`/itemDetails/${product}`}>
+            <button
+              id="boton_agregar"
+              className="Button"
+              onClick={addToCart}
+            >
+              Agregar al carrito
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );
 };
 
 export default ItemCount;
-

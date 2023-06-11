@@ -21,6 +21,7 @@ import CarritoPage from './pages/CarritoPage';
 import ItemDetails from '../ItemDetails/ItemDetails';
 
 
+
 import '../../index.css';
 
 
@@ -46,7 +47,7 @@ return(
             <div>
             <ul id="navbar">
                 <li>
-                <Link class="inicio" to="/Home" ><img id='personita' src={icon_init} alt='personita'/></Link>
+                <Link className="inicio" to="/Home" ><img id='personita' src={icon_init} alt='personita'/></Link>
                 </li>
                 <li>
                 <Link id="customiza" to="/customiza" ><img id='icon_custom' src={icon_customiza} alt='icon_custom'></img></Link>
@@ -81,6 +82,7 @@ return(
             <Route  path="/login" element={<LoginPage />} />
             <Route  path="/register" element={<RegisterPage />} />
             <Route path="/itemDetails" element={<ItemDetails />} />
+            <Route  path="/itemDetails/:id" element={<ItemDetails />} />
         </Routes>
         </div>
         

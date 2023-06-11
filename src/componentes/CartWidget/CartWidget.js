@@ -1,27 +1,23 @@
-
 import icon_carrito from './assets/carrito_icon.png';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import useCartContext from '../../hooks/cartContext';
 
 
 const CartWidget = () => {
+  const { cartItems } = useCartContext();
 
-    return(
-        
-        <main>
+  const cartItemCount = cartItems.reduce((total, item) => total + item.cantidad, 0);
 
-        <div className='carrito'>
-        
-            <Link id="carrito" to='/carrito'><img src={icon_carrito}  alt='cart-widget'/></Link>
-            <p>5</p>
-
-            
-        </div>
-
-        
-        </main>
-    )
-
-
-}
+  return (
+    <main>
+      <div className='carrito'>
+        <Link id="carrito" to='/carrito'>
+          <img src={icon_carrito} alt='cart-widget' />
+        </Link>
+        <p>{cartItemCount}</p>
+      </div>
+    </main>
+  );
+};
 
 export default CartWidget;
